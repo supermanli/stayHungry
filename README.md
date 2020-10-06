@@ -1,4 +1,3 @@
-一个弱鸡的学习笔记
 
 # 1、使用mvn打包源码并发布到本地仓库
 
@@ -478,7 +477,7 @@ OK，以上就是所有问题，有问题可以发邮件联系：16637462812@163
 ### 样例
 
 ```java
-package com.chinaunicom.cs.gcp.provider.scheduledtask;
+package com.supermanli.ftp;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -496,14 +495,10 @@ public class SFTPUtil {
     /**
      * 获取ChannelSftp
      *
-     * @param host
-     *            主机
-     * @param sOnlineSftpPort
-     *            端口
-     * @param username
-     *            用户名
-     * @param password
-     *            密码
+     * @param host 主机
+     * @param sOnlineSftpPort 端口
+     * @param username 用户名
+     * @param password 密码
      * @return
      */
     public static ChannelSftp getConnectIP(String host, String sOnlineSftpPort, String username, String password) {
@@ -533,10 +528,8 @@ public class SFTPUtil {
     /**
      * 上传
      *
-     * @param directory
-     *            sftp 服务器目录
-     * @param uploadFile
-     *            上传文件路径
+     * @param directory sftp 服务器目录
+     * @param uploadFile 上传文件路径
      * @param sftp
      */
     public static void upload(String directory, File uploadFile, ChannelSftp sftp) {
@@ -559,12 +552,9 @@ public class SFTPUtil {
     /**
      * 下载
      *
-     * @param directory
-     *            sftp服务器目录
-     * @param downloadFile
-     *            目录下的文件名称
-     * @param saveFile
-     *            本地保存文件路径
+     * @param directory sftp服务器目录
+     * @param downloadFile 目录下的文件名称
+     * @param saveFile  本地保存文件路径
      * @param sftp
      */
     public static void download(String directory, String downloadFile, String saveFile, ChannelSftp sftp) {
